@@ -15,10 +15,8 @@ The project also utilizes a CSS framework or preprocessor (Sass or Tailwind CSS)
 ## Technologies Used
 
 - **JavaScript (ES6+)**: Handles dynamic behavior, DOM manipulation, and local storage.
-- **CSS**: Styled using either Sass.
+- **CSS**: Styled using Sass.
 - **HTML5**: Basic structure and semantic elements.
-- **Local Storage**: To persist data between page reloads.
-- **Intersection Observer API**: Lazy load or animate tasks when they appear in the viewport.
 
 ## Features
 
@@ -37,20 +35,6 @@ The project also utilizes a CSS framework or preprocessor (Sass or Tailwind CSS)
 2. Install necessary dependencies:
    ```bash
    npm install
-   ```
-
-### For Sass Users:
-
-3. Run the Sass compiler:
-   ```bash
-   npm run sass
-   ```
-
-### For Tailwind CSS Users:
-
-3. Build Tailwind CSS:
-   ```bash
-   npm run build
    ```
 
 ## Usage

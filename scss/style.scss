@@ -1,11 +1,86 @@
-::root {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --accent-color: #4335a7;
+  --font-family: "Roboto", sans-serif;
   --font-size: 16px;
-  --font-family: "Open Sans", sans-serif;
-  --font-weight: 400;
 }
 
-
-body {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: grey;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+header {
+  background-color: #f5f5f5;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+#menu-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0;
+  gap: 2rem;
+  #logo {
+    display: flex;
+    padding-left: 3rem;
+  }
+}
+
+nav {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  li {
+    width: 80%;
+    padding: 0.7rem 0 0.7rem 3rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: flex-start;
+
+    &:hover {
+      background-color: #4d4e4e07;
+      color: var(--accent-color);
+      cursor: pointer;
+      border-radius: 0 0.5rem 0.5rem 0;
+      font-weight: bold;
+    }
+  }
 }

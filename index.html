@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/image/favicon.ico" />
+    <script src="script.js" type="module" defer></script>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <script src="./script.js" defer></script>
     <title>Tamap task manager</title>
   </head>
   <body>
@@ -18,9 +19,9 @@
           <h1>Tam<span style="color: var(--accent-color)">App</span></h1>
         </div>
         <nav id="navigation-menu">
-          <section id="top-section">
+          <section class="top section">
             <ul>
-              <li>
+              <li class="active">
                 <a href="#">
                   <span class="material-symbols-outlined">home</span
                   ><span>Overview</span>
@@ -52,7 +53,7 @@
               </li>
             </ul>
           </section>
-          <section id="bottom-section">
+          <section class="bottom section">
             <ul>
               <li>
                 <a href="#">
@@ -62,8 +63,7 @@
               </li>
               <li>
                 <a href="#">
-                  <span class="profile-image"
-                    ><img src="" alt="random image" /></span
+                  <span id="profile-image"></span
                   ><span class="profile-name"></span>
                 </a>
               </li>
@@ -73,7 +73,58 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section id="search-bar">
+        <input type="text" placeholder="Search" />
+        <span class="material-symbols-outlined">search</span>
+      </section>
+
+      <section id="main-part">
+        <div id="welcome-note">
+          <h2 id="greetings"></h2>
+          <p id="date"></p>
+        </div>
+
+        <div id="overview">
+          <p>
+            <span>Recent updates</span>
+            <span class="material-symbols-outlined">history</span>
+          </p>
+
+          <div id="task-list">
+            <div class="task-card">
+              <div class="task-header">
+                <h3 class="task-name">Task Name</h3>
+                <div class="assigned-to">
+                  <span>Assigned to</span>
+                </div>
+              </div>
+              <div class="task-progress">
+                <progress value="50" max="100"></progress>
+              </div>
+            </div>
+            <div class="task-card">
+              <div class="task-header">
+                <h3 class="task-name">Task Name</h3>
+                <div class="assigned-to"></div>
+              </div>
+              <div class="task-progress">
+                <progress value="50" max="100"></progress>
+              </div>
+            </div>
+            <div class="task-card">
+              <div class="task-header">
+                <h3 class="task-name">Task Name</h3>
+                <div class="assigned-to"></div>
+              </div>
+              <div class="task-progress">
+                <progress value="50" max="100"></progress>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <template id="task-template">
       <div class="task">
         <div class="task-content">

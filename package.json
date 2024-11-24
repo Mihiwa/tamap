@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "type": "module",
-  "dependencies": {
+  "devDependencies": {
     "@faker-js/faker": "^9.2.0"
   }
 }

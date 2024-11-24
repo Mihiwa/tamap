@@ -1,0 +1,21 @@
+@use "main";
+@use "variables";
+@import "header";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: grey;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}

@@ -1,0 +1,97 @@
+:root {
+  --accent-color: #4335a7;
+  --font-family: "Roboto", sans-serif;
+  --font-size: 1rem;
+  --small-font-size: 0.8rem;
+}
+
+main {
+  background-color: #f5f5f5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 0.3rem 0.5rem;
+  background-color: #f3f3f6;
+  width: 30%;
+  border-radius: 25px;
+  overflow: hidden;
+  font-size: var(--font-size);
+}
+main #search-bar input {
+  border: none;
+  width: 100%;
+  padding: 0.7rem;
+  background: transparent;
+  outline: none;
+  font-size: var(--small-font-size);
+  color: #1a1a1a;
+}
+main #search-bar span {
+  padding-right: 0.5rem;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#main-part {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: aquamarine;
+  height: 100%;
+}
+#main-part #welcome-note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#main-part #overview {
+  font-weight: normal;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#main-part #overview p {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+#main-part #overview .task-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+
+#task-list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.assigned-to {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.assigned-to img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */
